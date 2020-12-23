@@ -20,5 +20,7 @@ public class InspectionTest {
         inspection.minNumber(numbers);
         System.out.println("your max number is");
         inspection.maxNumber(numbers);
+        System.out.println("average number is");
+        inspection.agvNumber(numbers);
     }
 }

@@ -33,6 +33,12 @@ public class InspectionImpl implements Inspection {
 
     @Override
     public void agvNumber(int[] a) {
-
+        int sum = 0;
+        int avg;
+        for (int number : a) {
+            sum = sum + a[number];
+        }
+        avg = sum / (a.length);
+        System.out.println(avg);
     }
 }
