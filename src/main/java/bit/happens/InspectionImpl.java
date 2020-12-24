@@ -2,43 +2,37 @@ package bit.happens;
 
 public class InspectionImpl implements Inspection {
 
-    @Override
-    public void printArray(int[] a) {
-        for (int number : a) {
-            System.out.println(number);
-        }
-    }
 
     @Override
-    public void minNumber(int[] a) {
+    public int minNumber(int[] a) {
         int result = a[0];
         for (int number : a) {
             if (a[number] < result) {
                 result = a[number];
             }
         }
-        System.out.println(result);
+        return result;
     }
 
     @Override
-    public void maxNumber(int[] a) {
+    public int maxNumber(int[] a) {
         int result = a[0];
         for (int number : a) {
             if (a[number] > result) {
                 result = a[number];
             }
         }
-        System.out.println(result);
+        return result;
     }
 
     @Override
-    public void agvNumber(int[] a) {
-        int sum = 0;
-        int avg;
+    public double agvNumber(int[] a) {
+        double sum = 0;
+        double avg;
         for (int number : a) {
             sum = sum + a[number];
         }
         avg = sum / (a.length);
-        System.out.println(avg);
+        return avg;
     }
 }
