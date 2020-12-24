@@ -2,11 +2,9 @@ package bit.happens;
 
 public interface Inspection {
 
-    void printArray(int[] a);
+    int minNumber(int[] a);
 
-    void minNumber(int[] a);
+    int maxNumber(int[] a);
 
-    void maxNumber(int[] a);
-
-    void agvNumber(int[] a);
+    int agvNumber(int[] a);
 }
