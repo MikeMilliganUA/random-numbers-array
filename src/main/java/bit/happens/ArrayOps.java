@@ -1,11 +1,11 @@
 package bit.happens;
 
-public interface Inspection {
-
+public interface ArrayOps {
 
     int minNumber(int[] a);
 
     int maxNumber(int[] a);
 
-    double agvNumber(int[] a);
+    double avgNumber(int[] a);
+
 }
