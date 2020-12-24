@@ -27,7 +27,7 @@ public class InspectionImpl implements Inspection {
 
     @Override
     public double agvNumber(int[] a) {
-        int sum = 0;
+        double sum = 0;
         double avg;
         for (int number : a) {
             sum = sum + a[number];
